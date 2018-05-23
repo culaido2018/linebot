@@ -29,4 +29,6 @@ Route::any('/callback', function () {
     \Log::info( 123 );
     
     \Log::info( request() );
+    
+    return \Response::make('message', 200);
 });
