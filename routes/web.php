@@ -24,6 +24,9 @@ Route::get('/', function () {
     echo '24';
 });
 
-Route::get('/callback', function () {
+Route::any('/callback', function () {
+    echo '1';
+    \Log::info( 123 );
+    
     \Log::info( request() );
 });
