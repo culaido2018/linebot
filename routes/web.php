@@ -19,4 +19,7 @@ Route::get('/', function () {
     echo '19';
     
     app(LineBotService::class)->pushMessage('Test from laravel.');
+    
+    
+    echo '24';
 });
