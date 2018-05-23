@@ -25,9 +25,9 @@ Route::get('/', function () {
 });
 
 Route::any('/callback', function () {
-    echo '2';
+  //  echo '2';
     
-    \Log::info( request() );
+  //  \Log::info( request() );
     
-    return \Response::make('message', 200);
+    return response()->header('status', 200);
 });
