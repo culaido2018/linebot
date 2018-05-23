@@ -25,8 +25,7 @@ Route::get('/', function () {
 });
 
 Route::any('/callback', function () {
-    echo '1';
-    \Log::info( 123 );
+    echo '2';
     
     \Log::info( request() );
     
