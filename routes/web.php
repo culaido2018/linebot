@@ -25,5 +25,5 @@ Route::get('/', function () {
 });
 
 Route::get('/callback', function () {
-    dd( request() );
+    \Log::info( request() );
 });
