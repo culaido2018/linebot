@@ -16,8 +16,7 @@ use App\Services\LineBotService;
 
 Route::get('/', function () {
     
-    
-    
+      
     
     app(LineBotService::class)->pushMessage('Test from laravel.');
 });

@@ -29,7 +29,7 @@ class LineBotService
         if ( is_string($content) ) {
             $content = new TextMessageBuilder($content);
         }
-
+dd($this->lineBot->pushMessage($this->lineUserId, $content));
         return $this->lineBot->pushMessage($this->lineUserId, $content);
     }
     
