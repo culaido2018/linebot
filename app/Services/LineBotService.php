@@ -26,6 +26,7 @@ class LineBotService
      */
     public function pushMessage($content)
     {
+echo '29';
         if ( is_string($content) ) {
             $content = new TextMessageBuilder($content);
         }
