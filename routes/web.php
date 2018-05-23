@@ -23,3 +23,7 @@ Route::get('/', function () {
     
     echo '24';
 });
+
+Route::get('/callback', function () {
+    dd( request() );
+});
